@@ -9,6 +9,7 @@ body {
 	background-position: center;
 }
 
+
 /* dark mode looking scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -55,5 +56,89 @@ body {
 	40%,
 	60% {
 		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* Mobile responsiveness for devices smaller than 480px */
+@media (max-width: 480px) {
+	body {
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Adjusting padding and margins for login and signup pages */
+	.flex {
+		flex-direction: column;
+	}
+
+	.min-w-96 {
+		min-width: 100%;
+	}
+
+	.p-6 {
+		padding: 1rem; /* Smaller padding on small devices */
+	}
+
+	.text-3xl {
+		font-size: 1.5rem; /* Smaller font for headings */
+	}
+
+	.w-full {
+		width: 100%;
+	}
+
+	.input {
+		height: 2.5rem; /* Smaller input boxes */
+	}
+
+	.btn {
+		height: 2.5rem; /* Adjust button height */
+	}
+
+	.btn-block {
+		width: 100%;
+	}
+
+	.label-text {
+		font-size: 0.875rem; /* Smaller label text */
+	}
+
+	/* Reducing the height of the home page layout */
+	.sm\:h-\[450px\] {
+		height: auto; /* Allow auto-adjustment based on content */
+	}
+
+	.md\:h-\[550px\] {
+		height: auto;
+	}
+
+	.rounded-lg {
+		border-radius: 0.5rem; /* Smaller border radius */
+	}
+
+	.overflow-hidden {
+		overflow-x: hidden; /* Avoid horizontal scrolling */
+	}
+
+	/* Sidebar and Message container adjustments */
+	.sidebar {
+		width: 100%; /* Full width on smaller screens */
+	}
+
+	.message-container {
+		width: 100%;
+	}
+
+	/* Ensure links are easy to interact with */
+	.text-sm {
+		font-size: 0.875rem; /* Smaller link text */
+	}
+
+	.hover\:underline {
+		text-decoration: underline;
+	}
+
+	.hover\:text-blue-600 {
+		color: #1e3a8a; /* Darker blue for better contrast on small screens */
 	}
 }
